@@ -23,7 +23,9 @@
 
 <view>{{start_stop_id}}</view>
 <view>{{destination_stop_id}}</view>
+<view class="schedule">
 <view>{{start_stop_name}}</view>
-<view wx:for="{{startTime}}" wx:for-item="time" wx:key="*item">{{time.time}} </view>
+<view class="schedule2" wx:for="{{startTime}}" wx:for-item="time" wx:key="*item">{{time.time}} </view>
 <view>{{ destination_stop_name}}</view>
-<view wx:for="{{destinationTime}}" wx:for-item="time" wx:key="*item">{{}}{{time.time}} </view>
+<view  wx:for="{{destinationTime}}" wx:for-item="time" wx:key="*item">{{}}{{time.time}} </view>
+</view>

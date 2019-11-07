@@ -10,12 +10,22 @@ image {
   height: 110px;
 }
 
+
 .hr {
   /* 设置水平线样式 */
   height: 2px;
   background-color: yellowgreen;
   margin: 10px 0;
 
+}
+
+.schedule{
+  display: flex;
+  justify-content: space-around
+}
+.schedule2{
+  display: block;
+  justify-content: space-around
 }
 
 .lineLayout {
