@@ -1,0 +1,23 @@
+<view class="box">
+  <view class="title">线路查询</view>
+  <picker bindchange="bindPickerChange" value="{{stop}}" range="{{stop}}">
+    <view class="picker">
+      <view class="lineLayout">
+        <text> 起点：</text>
+        <input disabled="true" name="start" value="{{array[index]}}"></input>
+      </view>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{stop}}">
+    <view class="picker">
+      <view class="lineLayout">
+        <text> 起点：</text>
+        <input disabled="true" name="destination" value="{{array[index]}}"></input>
+      </view>
+    </view>
+  </picker>
+  <view class="lineLayout">
+    <button class="lineLayout" type='primary' form-type='submit'>提交</button>
+  </view>
+</view>
+<button class="lineLayout" type='primary' bindtap="query">查询</button>
