@@ -15,12 +15,14 @@ image {
   height: 2px;
   background-color: yellowgreen;
   margin: 10px 0;
+
 }
 
 .lineLayout {
   /* 设置text和input组件布局 */
-  display: inline-block; /* 设置布局模式 */
+  display: flex; /* 设置布局模式 */
   margin: 10px;
+    border: 10px 10px;
 }
 
 text {
@@ -41,9 +43,9 @@ input:hover {
   border-bottom: 2px solid chocolate;
 }
 
-button {
+.button {
   /* 设置button组件样式 */
-  width: 100px;
+  width: 60px;
   margin: 20px auto; /*上下边距20px，左右边距自动（左右边距相等）*/
 }
 
