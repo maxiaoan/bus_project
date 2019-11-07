@@ -3,29 +3,30 @@
 
   <view class="lineLayout">
     <text> 起点：</text>
-     <input class="weui-input" bindinput="startStop" placeholder="输入起点"/>
+    <input class="weui-input" bindinput="startStop" placeholder="输入起点" />
   </view>
 
   <view class="lineLayout">
     <text> 终点：</text>
-    <input class="weui-input" bindinput="destinationStop" placeholder="输入终点"/>
+    <input class="weui-input" bindinput="destinationStop" placeholder="输入终点" />
   </view>
 
   <view class="lineLayout">
-    <button  type='primary' bindtap="start"  >起点</button>
-    <button  type='primary'  bindtap="destination">终点</button>
+    <button type='primary' bindtap="start">起点</button>
+    <button type='primary' bindtap="destination">终点</button>
   </view>
-    <view class="lineLayout">
-    <button   type='primary'  bindtap="startTime">起点时间</button>
-     <button  type='primary'  bindtap="destinationTime">终点时间</button>
+  <view class="lineLayout">
+    <button type='primary' bindtap="startTime">起点时间</button>
+    <button type='primary' bindtap="destinationTime">终点时间</button>
   </view>
 </view>
-
+<!-- 
 <view>{{start_stop_id}}</view>
-<view>{{destination_stop_id}}</view>
+<view>{{destination_stop_id}}</view> -->
 <view class="schedule">
-<view>{{start_stop_name}}</view>
-<view class="schedule2" wx:for="{{startTime}}" wx:for-item="time" wx:key="*item">{{time.time}} </view>
-<view>{{ destination_stop_name}}</view>
-<view  wx:for="{{destinationTime}}" wx:for-item="time" wx:key="*item">{{}}{{time.time}} </view>
+  <view>{{start_stop_name}}</view>
+  <view class="demo"  wx:for="{{startTime}}" wx:for-item="time" wx:key="*item">{{time.time}} </view>
+
+  <view>{{ destination_stop_name}}</view>
+  <view class="demo" wx:for="{{destinationTime}}" wx:for-item="time" wx:key="*item">{{time.time}} </view>
 </view>

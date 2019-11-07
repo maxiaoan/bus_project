@@ -20,13 +20,19 @@ image {
 }
 
 .schedule{
+  width: 100%;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  
 }
-.schedule2{
-  display: block;
-  justify-content: space-around
+
+.demo{
+  width:calc(50% - 40rpx);
+  margin:20rpx;
+  flex-direction:column;
+  display:flex;
 }
+
 
 .lineLayout {
   /* 设置text和input组件布局 */
